@@ -1,0 +1,29 @@
+<div id="pageTitle">
+	<h1><%=@word.term%></h1>
+</div>
+
+<div id="toolbar">
+    <div id="leftItem" class="backButton"><%= link_to "Back", :action => :new %></div>
+</div>
+
+<div id="content">
+    <ul>
+        <% @word.wordnik_definitions.each do |definition| %>
+
+            <li>
+                <div><%= definition['text'] %></div>
+            </li>
+
+        <% end %>
+    </ul>
+    <ul>
+        <% @word.mightyverse_definitions.each do |definition| %>
+
+            <li>
+                <div class="itemLabel"><%= definition['phrase']['language'] %></div>
+                <div class="itemValue"><%= definition['phrase']['text'] %></div>
+            </li>
+
+        <% end %>
+    </ul>
+</div>

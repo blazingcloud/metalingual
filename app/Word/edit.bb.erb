@@ -1,0 +1,24 @@
+<div id="pageTitle">
+		<h1>Edit <%= @word.term%></h1>
+</div>
+
+<div id="toolbar">
+    <%= link_to "Back", :action => :show, :id => @word.object %>
+    <%= link_to "Delete", :action => :delete, :id => @word.object %>
+</div>
+
+
+<div id="content">
+    <form method="POST" action="<%= url_for :action => :update %>">
+    	<input type="hidden" name="id" value="<%= @word.object %>"/>
+            <table>
+        		
+                    <tr>
+            			<td width="125" class="fieldLabel">Term: </td>
+              			<td><input type="text" name="word[term]" value="<%= @word.term %>"/></td>
+          		    </tr>
+        		
+            </table>
+            <input type="submit" class="standardButton" value="Update" />
+    </form>
+</div>

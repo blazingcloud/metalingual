@@ -1,0 +1,19 @@
+<div id="pageTitle">
+	<h1>Words</h1>
+</div>
+
+
+<div id="toolbar">
+    <%= link_to "New", :action => :new %>
+    <%= link_to "Home", RhoConfig::start_path %>
+</div>
+
+<div id="content">
+    <ul>
+    <% @words.each do |obj| %>
+    	
+    	    <li><%= link_to "#{obj.term}", :action => :show, :id => obj.object %></li>
+    	
+    <% end %>
+    </ul>
+</div>

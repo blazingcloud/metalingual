@@ -1,0 +1,18 @@
+<div id="pageTitle">
+	<h1>Search definitions</h1>
+</div>
+
+<div id="toolbar"> </div>
+
+<div id="content">
+    <form method="POST" action="<%= url_for :action => :create %>">
+        <input type="hidden" name="id" value="<%= @word.object %>"/>
+        <ul>
+            <li>
+                <label for="word[term]" class="fieldLabel">Term</label>
+                <input type="text" name="word[term]" <%= placeholder( "Term" ) %> value="speak"/>
+            </li>
+        </ul>
+        <input type="submit" class="standardButton" value="Search" />
+    </form>
+</div>
