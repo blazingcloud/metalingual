@@ -12,13 +12,11 @@
     <form method="POST" action="<%= url_for :action => :create %>">
 	    <input type="hidden" name="id" value="<%= @word.object %>"/>
         <table>
-    		
     		  <tr>
     			  <td width="125">Term: </td>
     			  <td><input type="text" name="word[term]"/></td>
     		  </tr>
-    		
         </table>
-        <input type="submit" class="standardButton" value="Create" />
+        <input type="submit" class="standardButton" value="Search" />
     </form>
 </div>

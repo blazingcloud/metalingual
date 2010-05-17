@@ -12,10 +12,18 @@
 
     <table>
       
-      <tr>
-    	<td>Term</td>
-        <td><%= @word.term%></td>
-      </tr>
-      
+      <th><td>Term</td></th>
+
+      <% @word.wordnik_definitions.each do |definition| %>
+          <tr><td><%= definition['text'] %></td></tr>
+      <% end %>
+
+      <% @word.mightyverse_definitions.each do |definition| %>
+          <tr>
+              <td><%= definition['phrase']['language'] %></td>
+              <td><%= definition['phrase']['text'] %></td>
+          </tr>
+      <% end %>
+
     </table>
 </div>
