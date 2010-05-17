@@ -21,3 +21,5 @@ LastVisitedPage = ''
 # Sync server url.  This must be the full path to your sources.  
 # For example: http://rhomobile.rhohub.com/apps/SugarCRM/sources/
 syncserver = ''
+
+wordnik_key = 'YOUR_WORDNIK_API_KEY'

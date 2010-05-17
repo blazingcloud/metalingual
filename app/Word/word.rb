@@ -3,7 +3,7 @@
 
 class Word
   @@wordnik_url_prefix = "http://api.wordnik.com/api/word.json/"
-  @@wordnik_headers = {'api_key' => ""}
+  @@wordnik_headers = {'api_key' => Rho::RhoConfig.wordnik_key}
   @@mightyverse_url = "http://localhost:3000/mightyverse.json"
 
   attr_reader :wordnik_definitions, :mightyverse_definitions
