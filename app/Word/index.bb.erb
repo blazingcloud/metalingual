@@ -1,0 +1,17 @@
+<div id="pageTitle">
+    <h1>Polyglot</h1>
+</div>
+
+<div id="toolbar"> </div>
+
+<div id="content">
+    <form method="POST" action="<%= url_for :action => :search %>">
+        <table>
+    		  <tr>
+    			  <td width="50">Term: </td>
+    			  <td><input type="text" name="word[term]"/></td>
+                  <td><input type="submit" class="standardButton" value="Search"/></td>
+    		  </tr>
+        </table>
+    </form>
+</div>
