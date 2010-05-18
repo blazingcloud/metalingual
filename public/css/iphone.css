@@ -3,6 +3,8 @@
 body {
     margin: 0;
     font-family: Helvetica;
+    background: url('/public/images/pinstripes.png');
+	min-height:400px;
 }
 
 h1 {
@@ -24,56 +26,41 @@ form {
 
 /* header */
 
-div#pageTitle h1 {
+#pageTitle h1 {
     position: absolute;
     text-align: center;
     width: 100%;
     margin: 0 auto 0 auto;
-    line-height: 50px;
+    line-height: 40px;
     color: white;
     text-shadow: 1px 1px 1px #000;
 }
 
 
 /* toolbar */
-div#toolbar {
+#toolbar {
     width: 100%;
-    height: 50px;
+    height: 40px;
     background: -webkit-gradient(linear, left top, left bottom, color-stop(0.0, #aebbcb),color-stop(0.5, #8094ae), color-stop(1.0, #6e84a2));
 }
 
-div#toolbar div {
-    position: absolute;
-    overflow: hidden;
+#toolbar div {
     text-align: center;
 }
 
-div#toolbar div#leftItem {
-    top: 10px;
-    left: 10px;
-    width: 50px;
+#toolbar #leftItem {
+    top: 5px;
+    left: 5px;
+    width: 40px;
+    position: relative;
 }
 
-div#toolbar div#centerItem {
-    bottom: 20px;
-	width:100%;
-    margin-left: 10px;
-    height: 30px;
-}
-
-div#toolbar div#rightItem {
-    top: 10px;
-    right: 10px;
-    width: 50px;
-}
-
-div#toolbar a {
-    color:white;
-    display: block;
+#toolbar a {
+    color: white;
     line-height: 30px;
 }
 
-div#toolbar .backButton {
+#toolbar .backButton {
     -webkit-border-top-left-radius: 16px 16px;
     -webkit-border-top-right-radius: 6px 6px;
     -webkit-border-bottom-left-radius: 16px 16px;
@@ -90,14 +77,9 @@ div#toolbar .backButton {
     border: #1a49b3 1px solid;
 }
 
-#content {
-    background: url('/public/images/pinstripes.png');
-	min-height:480px;
-}
-
 #content form {
-    padding: 5px 0 0 0;
-	width: 310px;
+    padding: 10px 0 0 0;
+	width: 300px;
 	margin: 0 auto;
 }
 
@@ -121,6 +103,7 @@ div#toolbar .backButton {
 
 #content form input[type=text] {
     padding: 0 10px;
+    margin-right: 5px;
 }
 
 #content li {
