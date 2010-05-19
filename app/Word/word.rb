@@ -1,7 +1,7 @@
 class Word
   @@wordnik_url_prefix = "http://api.wordnik.com/api/word.json/"
   @@wordnik_headers = {'api_key' => Rho::RhoConfig.wordnik_key}
-  @@mightyverse_url = "http://localhost:3000/mightyverse.json"
+  @@mightyverse_url_prefix = "http://mightyverse-staging.heroku.com/search/target_language/en.json?dimension=400x300&content_type=video/quicktime&term="
 
   attr_reader :wordnik_definitions, :mightyverse_definitions
 
@@ -18,8 +18,9 @@ class Word
   end
 
   def fetch_mightyverse_definitions
-    response = Rho::AsyncHttp.get({:url => @@mightyverse_url})
-    @mightyverse_definitions = response['status'] == 'ok' ? response['body'] : []
+    url = @@mightyverse_url_prefix + term
+    response = Rho::AsyncHttp.get({:url => url})
+    @mightyverse_definitions = response['status'] == 'ok' ? response['body']['result'] : []
   end
 
 end
