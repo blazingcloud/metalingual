@@ -3,3 +3,5 @@ sim-public-*
 bin
 preverified
 RhoBundle
+.idea/dictionaries
+.idea/workspace.xml
