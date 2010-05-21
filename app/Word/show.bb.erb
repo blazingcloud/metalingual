@@ -19,9 +19,13 @@
       <% end %>
 
       <% @word.mightyverse_definitions.each do |definition| %>
+          <% phrase = definition['phrase'] %>
           <tr>
-              <td><%= definition['phrase']['language'] %></td>
-              <td><%= definition['phrase']['text'] %></td>
+              <td>(<%= phrase['language'] %>)</td>
+              <td><a href="<%= definition['video_uri'] %>"><%= phrase['text'] %></a></td>
+          </tr>
+          <tr>
+              <td><%= phrase['translation']['text'] %></td>
           </tr>
       <% end %>
 
