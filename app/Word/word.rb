@@ -1,7 +1,7 @@
 class Word
   @@wordnik_url_prefix = "http://api.wordnik.com/api/word.json/"
   @@wordnik_headers = {'api_key' => Rho::RhoConfig.wordnik_key}
-  @@mightyverse_url_prefix = "http://www.mightyverse.com/search/target_language/en.json?dimension=400x300&api_key=#{Rho::RhoConfig.mightyverse_key}&term="
+  @@mightyverse_url_prefix = "http://www.mightyverse.com/search/target_language/en.json?api_key=#{Rho::RhoConfig.mightyverse_key}&term="
 
   attr_reader :wordnik_definitions, :mightyverse_definitions
 
