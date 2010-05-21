@@ -8,7 +8,7 @@ class AppApplication < Rho::RhoApplication
     @@tabbar = nil
     # Important to call super _after_ you define @tabs!
 
-    @@toolbar = nil
+    @@toolbar = [{:action => :back}, {:action => :home}]
     super
   end
 end
