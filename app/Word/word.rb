@@ -1,4 +1,6 @@
 class Word
+  include Rhom::PropertyBag
+
   @@count = 3;
   @@wordnik_url_prefix = "http://api.wordnik.com/api/word.json/"
   @@wordnik_headers = {'api_key' => Rho::RhoConfig.wordnik_key}

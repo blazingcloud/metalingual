@@ -1,12 +1,14 @@
-<div id="pageTitle">
+<div class="pageTitle">
 	<h1><%=@word.term%></h1>
 </div>
 
-<div id="toolbar">
-    <div id="leftItem" class="backButton"><%= link_to "Back", :action => :index %></div>
+<div class="toolbar">
+    <div class="leftItem backButton">
+      <a href="<%= url_for :action => :index %>">Back</a>
+    </div>
 </div>
 
-<div id="content">
+<div class="content">
     <% if @word.wordnik_definitions.length > 0 %>
         <div class="header">Definitions</div>
         <ul>

@@ -1,9 +1,6 @@
 # Startup page for your application
 start_path = '/app/Word/index'
 
-# Path to the options page (in this case handled by javascript)
-options_path = '/app/Settings'
-
 # Location of bundle url (i.e. from rhohub.com)
 rhobundle_zip_url = ''
 
@@ -21,6 +18,8 @@ LastVisitedPage = ''
 # Sync server url.  This must be the full path to your sources.  
 # For example: http://rhomobile.rhohub.com/apps/SugarCRM/sources/
 syncserver = ''
+
+splash_screen='zoom'
 
 wordnik_key = 'YOUR_WORDNIK_API_KEY'
 mightyverse_key = 'YOUR_MIGHTYVERSE_API_KEY'
