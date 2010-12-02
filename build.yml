@@ -1,3 +1,4 @@
+sdk: /opt/resque/sdk/rhodes-2.2.3
 sdkversion: 2.2.4
 name: Metalingual
 version: 1.0
