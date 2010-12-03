@@ -1,5 +1,8 @@
 This is a mobile mashup of Wordnik and Mightyverse.  This cross-platform mobile application uses the Rhodes framework to look up a word's definition in Wordnik and usage across languages in Mightyverse. 
 
+You'll need to install Rhombile to compile the app. Follow the instructions at <a href="http://wiki.rhomobile.com/index.php/Building_Rhodes_on_Supported_Platforms">"Building Rhodes on Supported Platforms"</a>.
+
+
 Originally written by Pablo Kang and Sarah Allen.
 
    Copyright (C) 2010  Blazing Cloud, http://blazingcloud.net
